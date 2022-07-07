@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px 25px rgba(0,0,0,.1);
+}
+
+.main-header div {
+    align-items: center;
+}
+
+.main-header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-header .company-logo {
+    width: 180px;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.filter-section form input[type='submit'] {
+    background-color: #fb503b;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 7px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.filter-section form input[type='text'] {
+    width: 100%;
+    outline: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #363636;
+}
+
+.filter-section form input[type='submit']:hover {
+    background-color: #aec6cf;
+}
+
+.filter-section .filter-div {
+    display: flex;
+    align-items: center;
+}
+
+.filter-section .filter-div select {
+    outline: 0;
+    border-bottom: 1px solid #363636;
+    padding: 7px 0;
+    width: 100%;
+}
+
+.login-section, .admin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    text-align: center;
+}
+
+.login-section h2, .admin-section h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login-section .form-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-section .form-wrapper input[type = 'email'], .login-section .form-wrapper input[type = 'password'], .login-section .form-wrapper input[type = 'text'], .login-section .form-wrapper select, .login-section .form-wrapper input[type = 'file'] {
+    border-bottom: 1px solid #363636;
+    max-width: 400px;
+    outline: 0;
+    padding: 7px 0;
+    width: 100%;
+}
+
+.login-section .form-wrapper textarea {
+    border: 1px solid #363636;
+    height: 180px;
+    max-width: 400px;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+}
+
+.login-section .form-wrapper input[type = 'submit'] {
+    background-color: #fb503b;
+    color: #ffffff;
+    cursor: pointer;
+    max-width: 400px;
+    padding: 7px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.login-section .form-wrapper input[type = 'submit']:hover {
+    background-color: #aec6cf;
+}
+
+.admin-menu {
+    padding: 12px;
+    background-color: #f2f2f2;
+}
+
+.admin-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.admin-menu ul li {
+    display: inline;
+    padding: 7px;
+}
+
+.admin-menu ul li a {
+    transition: all .3s ease;
+}
+
+.admin-menu ul li a:hover {
+    border-bottom: 1px solid #fb503b;
+}
+
+.admin-section .table-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.admin-section .table-wrapper table th, .admin-section .table-wrapper table td{
+    text-align: left;
+    padding: 12px;
+    background-color: #f2f2f2;
+    border: 1px solid #363636;
+}
+
+.admin-section .add-admin-btn {
+    background-color: #fb503b;
+    padding: 12px 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: right;
+    transition: all .3s ease;
+}
+
+.admin-section .add-admin-btn:hover {
+    background-color: #aec6cf;
+}
+
+.alert-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    background-color: #fb503b;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 7px;
+    text-align: center;
+}
+
+.success-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    background-color: #77dd77;
+    border-radius: 10px;
+    color: #363636;
+    font-size: 14px;
+    padding: 7px;
+    text-align: center;
+}
+
+
+.products-wrapper .product-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #f2f2f2;
+}
+
+.products-wrapper .product-wrapper img {
+    margin-bottom: 12px;
+}
+
+.products-wrapper .product-wrapper .categories, .products-wrapper .product-wrapper .brand {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.products-wrapper .product-wrapper .title {
+    font-size: 20px;
+    color: #fb503b;
+}
+
+.products-wrapper .product-wrapper .excerpt {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .admin-section .table-wrapper {
+      overflow-x: scroll;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+    .main-header div {
+      justify-items: center;
+    }
+  }
